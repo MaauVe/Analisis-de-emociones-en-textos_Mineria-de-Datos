@@ -1,0 +1,15 @@
+Texto,Emocion_Predicha,Emocion_Esperada,Probabilidad_Max,Correcto
+Me siento muy contento porque aprobé mi examen final con excelente calificación,Felicidad,Felicidad,0.8301129348210435,True
+"Hoy es un día maravilloso, estoy lleno de alegría y energía positiva",Felicidad,Felicidad,0.6086317980568018,True
+Me siento muy triste porque perdí a mi mascota que era muy importante para mí,Tristeza,Tristeza,0.7104729178399095,True
+Estoy pasando por un momento difícil y me siento desanimado con todo,Tristeza,Tristeza,0.7015821280088835,True
+Estoy muy enojado porque me trataron de manera injusta en el trabajo,Ira,Ira,0.5436860466101602,True
+Me da mucha rabia cuando las personas no respetan las reglas básicas de convivencia,Disgusto,Ira,0.5600954742256695,False
+Tengo mucho miedo de hablar en público frente a tantas personas,Disgusto,Miedo,0.6858895106844839,False
+Me da pánico pensar en el futuro y todas las incertidumbres que trae,Miedo,Miedo,0.7174721022636463,True
+"Me da asco la comida que sirven en esa cafetería, está horrible",Disgusto,Disgusto,0.8212622643804071,True
+Siento repulsión hacia las personas que no respetan el medio ambiente,Disgusto,Disgusto,0.7794586736827126,True
+"No puedo creer lo que acaba de pasar, me quedé completamente sorprendido",Sorpresa,Sorpresa,0.782178243380093,True
+¡Qué impresionante! Nunca esperé que algo así pudiera suceder,Sorpresa,Sorpresa,0.5395617658378543,True
+A veces me siento confundido entre la alegría y la nostalgia del pasado,Tristeza,Ambiguo,0.8765001759537578,
+No sé si estoy emocionado o nervioso por este nuevo desafío en mi vida,Sorpresa,Ambiguo,0.3917381618025242,
