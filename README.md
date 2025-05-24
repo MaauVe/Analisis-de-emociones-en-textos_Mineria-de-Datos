@@ -39,71 +39,61 @@ Para la instalación de todas las dependencias ingresar en la terminal: pip inst
 
 2) Reestructuración del dataset
 	-Ejecuta 1.Reestrucutración.py para transformar el CSV original en un DataFrame limpio con columnas respuesta, emoción y pregunta.
+	-Salida: dataset_emociones_transformado.csv
 	```Código de ejecución en terminal de Visual Studio:
 		"python 1.Reestrucutración.py"
-	-Salida: dataset_emociones_transformado.csv
 
 3) Análisis exploratorio de datos
 	-Ejecuta 2.EDA.py para generar estadísticas y gráficas (distribución, longitud, nubes de palabras).
+	-Salidas: Gráficos en pantalla y resultados de análisis en terminal.
 	```Código de ejecución en terminal de Visual Studio:
 		"python 2.EDA.py"
-	-Salidas: Gráficos en pantalla y resultados de análisis en terminal.
 
 4) Preprocesamiento y guardado
 	-Ejecuta 3.Preprocesamiento.py para tokenizar, limpiar, eliminar stopwords y lematizar.
+	-Salida: dataset_emociones_preprocesado.csv
 	```Código de ejecución en terminal de Visual Studio:
 		"python  3.Preprocesamiento.py"
-	-Salida: dataset_emociones_preprocesado.csv
 	
 5) Vectorización TF-IDF
 	-Descomentar al final de 3.Preprocesamiento.py el código "CODIGO DE VECTORIZACIÓN TF-IDF" y comentar los demás códigos del archivo.
 	-Ejecuta 3.Preprocesamiento.py para ajustar el TfidfVectorizer y guardar el modelo.
+	-Salida: tfidf_vectorizer.pkl
 	```Código de ejecución en terminal de Visual Studio:
 		"python 3.Preprocesamiento.py"
-	-Salida: tfidf_vectorizer.pkl
 
 6) Generación de embeddings con RoBERTuito
 	-Ejecuta 4.Embeddings.py para producir un archivo NumPy con embeddings.
+	-Salidas: embeddings.npy, labels.csv
 	```Código de ejecución en terminal de Visual Studio:
 		"python Embeddings"
-	-Salidas: embeddings.npy, labels.csv
 
 7) División del dataset
 	-Ejecuta 5.División Dataset.py para crear particiones de entrenamiento y prueba 80/20 (estratificado).
+	-Salidas: X_train.npy, X_test.npy, y_train.csv, y_test.csv, comparacion_modelos_completa.png
 	```Código de ejecución en terminal de Visual Studio:
 		"python 5.División Dataset.py"
-	-Salidas: X_train.npy, X_test.npy, y_train.csv, y_test.csv, comparacion_modelos_completa.png
 
 8) Entrenamiento
 	-Ejecuta 6.Algortimos_PY.py para entrenar KNN, NB, árboles, SVM y RF.
+	-Salidas: Matriz de confusión en formato .png y gráficos de barras.
 	```Código de ejecución en terminal de Visual Studio:
 		"6.Algortimos_PY.py"
-	-Salidas: Matriz de confusión en formato .png y gráficos de barras.
 
 9) Visualización 
 	-Ejecuta 6.1 Visualización ROC_AUC.py para crear una tabla con los valores AUC-ROC por clase para cada modelo.
+	-Salidas: auc_roc_por_clase.csv, modelos de curvas .png
 	```Código de ejecución en terminal de Visual Studio:
 		"python 6.1 Visualización ROC_AUC.py"
-	-Salidas: auc_roc_por_clase.csv, modelos de curvas .png
 
 10) Validación de modelos
 	-Ejecuta 7.Validacion_de_modelos.py para evalúar la robustez del modelo SVM (kernel RBF) usando validación estratificada en k-folds (5 y 10 pliegues).
+	-Salidas: validacion_cruzada_resultados_paso_7.csv, tabla con Precision, Recall y F1-Score para 5-fold y 10-fold CV.
 	```Código de ejecución en terminal de Visual Studio:
 		"python 7.Validacion_de_modelos.py"
-	-Salidas: validacion_cruzada_resultados_paso_7.csv, tabla con Precision, Recall y F1-Score para 5-fold y 10-fold CV.
 
 11) Ejemplos de predicciones
 	-Ejecuta 8.Ejemplos de predicciones.py para entrenar SVM final y probar oraciones de ejemplo o modo interactivo (para el modo interactivo descomente su sección).
+	-Salida: ejemplos_predicciones_svm.csv, resultados de predicciones en la consola.
 	```Código de ejecución en terminal de Visual Studio:
 		"8.Ejemplos de predicciones.py"
-	-Salida: ejemplos_predicciones_svm.csv, resultados de predicciones en la consola.
-
-	
-
-
-
-
-
-
-
-
